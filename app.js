@@ -23,8 +23,6 @@ app.get('/blogs',(req,res)=>{
         else
         console.log(err);
         })
-
-
 })
 
 app.post('/blog-post',(req,res)=>{
@@ -35,8 +33,6 @@ app.post('/blog-post',(req,res)=>{
         if(err) throw err;
             console.log("1 record inserted");
         })
-
-    
     res.json(req.body)
 
 });
